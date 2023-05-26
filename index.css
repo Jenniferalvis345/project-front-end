@@ -1,491 +1,120 @@
-*{
-    box-sizing: border-box;
+/* Estilos para los encabezados */
+h1 {
+  font-size: 20px;
+  color: #fdfbfb;
 }
 
-html{
-    scroll-behavior: smooth;
+h2 {
+  font-size: 20px;
+  color: hsl(0, 11%, 95%);
 }
 
-body{
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
+/* Estilos para los párrafos */
+p {
+  font-size: 16px;
+  color: #777;
 }
 
-h1{ font-size: 3.5em;}
-h2{ font-size: 2.7em;}
-h3{ font-size: 3.5;}
-p{ font-size: 1.25em;}
-ul{ list-style: none;}
-li{ font-size: 1.25em;}
-
-button{
-    font-size: 1.25em;
-    font-weight: bold;
-    padding: 10px 30px;
-    border-radius: 5px;
-    border: 2px solid rgba(0,0,0,0.3);
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-    color: white;
-    background-color: rgb(35, 192, 45);
+/* Estilos para las listas */
+ul {
+  list-style: none;
+  padding: 0;
 }
 
-button:hover{
-    background-color: rgb(34, 87, 7);
+li {
+  font-size: 20px;
+  color: #999;
 }
 
-.container{
-    max-width: 1400px;
-    margin: auto;
+/* Estilos para los botones */
+button {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f2f2f2;
+  color: #333;
 }
 
-.color-acento{ color:rgb(24, 147, 39); }
-
-header{
-    background-color: rgb(245,245,245);
-    
+button:hover {
+  background-color: #ccc;
 }
 
-header .logo{
-    margin: 0;
-    padding: 25px 30px;
-    font-weight: bold;
-    color: green;
-    font-size: 1.6em;
+/* Estilos para el contenedor */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-header .container{
-    display: flex;
-    flex-direction:block;
-    align-items: center;
+/* Estilos para el encabezado */
+header {
+  background-color:  #f5f5f5;
+  padding: 20px;
 }
 
-header nav{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-bottom: 25px;
+header .logo {
+  font-weight: bold;
+  color: green;
 }
 
-header a{
-    padding: 5px 12px;
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
+header nav {
+  margin-top: 20px;
 }
 
-header a:hover{
-    color: green;
+header a {
+  text-decoration: none;
+  color: #333;
+  margin-right: 10px;
+  font-weight: bold
 }
 
-#hero{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    height: 90vh;
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    ),url("media/hero.jpg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+header a:hover {
+  color: green;
 }
 
-#hero h1{
-    color:green;
+/* Estilos para el hero */
+#hero {
+  background-image: url("path/to/hero-image.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
 }
 
-#hero button{
-    font-size: 1.75em;
+#hero h1 {
+  font-size: 48px;
+  color: green;
+  margin-bottom: 20px;
 }
 
-#somos-venech .container{
-    text-align: center;
-    padding: 50px 12px;
-}
-
-#somos-venech{
-    background-color:whitesmoke;
-    color: black;
-    text-align: center;
-}
-
-#nuestras-categorias{
-    background-color: rgb(23, 85, 2);
-    color: white;
-    text-align: center;
-}
-
-#nuestras-categorias .container{
-    padding: 150px 12px;
-}
-
-#nuestras-categorias h2{
-    margin-top: 0;
-    font-size: 3.2em;
-}
-
-#nuestras-categorias p{
-    display: none;
-}
-
-#nuestras-categorias .carta{
-    background-position: center center;
-    background-size: cover;
-    padding: 50px 0px;
-    margin: 30px;
-    border-radius: 15px;
-}
-
-.carta:first-child{
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("media/alimentacion-end.jpg");
-
-}
-
-.carta:nth-child(2){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("media/madera-end.jpg");
-}
-
-.carta:nth-child(3){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("media/metal-end.jpg");
-
-}
-
-#caracteristicas .container{
-    text-align: center;
-    padding: 50px 10px;
-}
-
-
-#caracteristicas li{
-    margin: 16px 0px;
-    font-weight: bold;
-}
-
-#final{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: rgb(25,25,25);
-    color: white;
-    height: 80vh;
-}
-
-#final h2{
-    font-size: 9vw;
-}
-
-#final button{
-    font-size: 5vw;
-}
-
-footer{
-    background-color: rgb(230,230,230);
-}
-
-footer p{
-    margin: 0;
-    padding: 12px;
-    color: rgb(100,100,100);
-}
-
-footer .container{
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-@media (min-width: 850px){
-    header{
-        position: fixed;
-        width: 100%;
-    }
-
-    header .container{
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    header nav{
-        flex-direction: row;
-        padding-bottom: 0;
-        padding-right: 20px;
-    }
-
-    #hero h1{
-        font-size: 5em;
-    }
-
-    #somos-venech .container{
-        display: flex;
-        justify-content: space-evenly;
-    }
-
-    #somos-venech .texto{
-        width: 50%;
-        max-width: 600px;
-        text-align: initial;
-        padding-left: 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    #somos-venech h2{
-        margin-top: 0px;
-    }
-
-    #somos-venech .img-container{
-        background-image: url("media/Logo-end.png");
-        background-size: cover;
-        background-position: center center;
-        height: 150px;
-        width: 200px; 
-    }
-
-    #nuestras-categorias .programas{
-        display: flex;
-        justify-content: center;
-    }
-
-    #nuestras-categorias p{
-        display: block;
-        margin-bottom: 30px;
-    }
-
-    #nuestras-categorias h2{
-        font-size: 4em;
-    }
-
-    #nuestras-categorias h3{
-        margin-top: 0;
-    }
-
-    #nuestras-categorias .carta{
-        padding: 50px;
-        background-size: 100% 150px;
-        background-repeat: no-repeat;
-        background-position-y: 0;
-        background-color: rgb(10, 10, 10);
-        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
-    }
-
-    .carta:first-child{
-        background-image: linear-gradient(
-            0deg,
-            rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5)
-        )
-        ,url("media/alimentacion-end.jpg");
-
-    }
-
-    .carta:nth-child(2){
-        background-image: linear-gradient(
-            0deg,
-            rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5)
-        )
-        ,url("media/madera-end.jpg");
-    }
-
-    .carta:nth-child(3){
-        background-image: linear-gradient(
-            0deg,
-            rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5)
-        )
-        ,url("media/metal-end.jpg");
-
-    }
-
-    #caracteristicas{
-/* Importación de fuentes de google fonts */ 
-@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
-
-
-body{
-  height: 100%; 
-  font-family: 'Noto Sans', sans-serif;
-  font-family: 'Noto Sans', sans-serif;
-  background-color: #ab4493; 
-}
-
-
-.contact_form{  
-  width: 460px; 
-  height: auto;
-  margin: 80px auto;
-  border-radius: 10px;  
-  padding-top: 30px;
-  padding-bottom: 20px;  
-  background-color: #fbfbfb; 
-  padding-left: 30px; 
-}
-
-
-input{
-  background-color: #fbfbfb; 
-  width: 408px; 
-  height: 40px; 
-  border-radius: 5px;  
-  border-style: solid; 
-  border-width: 1px; 
-  border-color: #ab4493; 
-  margin-top: 10px;  
-  padding-left: 10px;
-  margin-bottom: 20px; 
-}
-
-
-textarea{
-  background-color: #fbfbfb; 
-  width: 405px; 
-  height: 150px; 
-  border-radius: 5px;  
-  border-style: solid; 
-  border-width: 1px; 
-  border-color: #ab4493; 
-  margin-top: 10px;  
-  padding-left: 10px;
-  margin-bottom: 20px; 
-  padding-top: 15px; 
-}
-
-
-label{
-  display: block; 
-  float: center;  
-}
-
-
-button{
-  height: 45px; 
-  padding-left: 5px;
-  padding-right: 5px;   
-  margin-bottom: 20px; 
-  margin-top: 10px;   
-  text-transform: uppercase;
-  background-color: #ab4493; 
-  border-color: #ab4493; 
-  border-style: solid; 
-  border-radius: 10px;  
-  width: 420px;   
+#hero button {
+  font-size: 10px;
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
   cursor: pointer;
 }
 
-
-button p{
-  color: #fff; 
+#hero button:hover {
+  background-color: darkgreen;
 }
 
-
-span{
-  color: #ab4493; 
+/* Estilos para el pie de página */
+footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
 }
 
-
-.aviso{
-  font-size: 13px;  
-  color: #0e0e0e;  
-}
-
-
-h1{
-  font-size: 39px;  
-  text-align: letf; 
-  padding-bottom: 20px; 
-  color: #ab4493;
-}
-
-
-h3{
-  font-size: 16px; 
-  padding-bottom: 30px;
-  color: #0e0e0e;   
-}
-
-
-p{
-  font-size: 14px; 
-  color: #0e0e0e; 
-}
-
-
-::-webkit-input-placeholder {
- color: #a8a8a8;
-}
-
-
-::-webkit-textarea-placeholder {
- color: #a8a8a8;
-}
-
-
-.formulario input:focus{
-  outline:0;
-  border: 1px solid #97d848;
-}
-
-
-.formulario textarea:focus{
-  outline:0;
-  border: 1px solid #97d848;
-}
-       
-       
-    }
-
-    #caracteristicas .container{
-        text-align: initial;
-    }
-
-    #caracteristicas ul{
-        margin-left:100px;
-    }
-
-
-    
-    #final h2{
-        font-size: 5em;
-    }
-
-    #final button{
-        font-size: 2em;
-    }
-
-    
-    footer .container{
-        justify-content: flex-end;
-    }
-    
-}
-
- 
-@media (min-width: 100px) {
-    #caracteristicas{
-        background-position-x: calc(100vw - 300px);
-    }
-    
+footer p {
+  font-size: 14px;
+  color: #777;
 }
